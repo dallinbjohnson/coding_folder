@@ -1,0 +1,1 @@
+def fizz_buzz; print "What number do you want Fizz Buzz to go up to? "; choice = gets.chomp.to_i; 1.upto(choice) do |number| puts number % 15 == 0 ? "FizzBuzz!" : number % 5 == 0 ? "Fizz" : number % 3 == 0 ? "Buzz": number end; end; fizz_buzz;
