@@ -4,15 +4,15 @@
 @dragon = []
 @dragon2 = "How many dice would you like to roll? "
 
-puts " "
+puts "\n"
 puts @dragon1 = "Each player rolls some dice, who ever rolls the highest wins that round."
-puts " "
+puts "\n"
 
 # asks if you would like to play again then exits, starts the game over, or prompts the question again
 def play_again
 	print "Would you like to play again (y or n)? "
 	@answer = gets.chomp.strip
-	puts " "
+	puts "\n"
 
 	if @answer.downcase == "y"
 		@userPoints = []
@@ -30,7 +30,7 @@ end
 def dragon0
 	print "Would you like to play with Dragons instead of Dice (y or n)? "
 	dragonA = gets.chomp.strip
-	puts " "
+	puts "\n"
 
 	if dragonA.downcase == "y"
 		@dragon << @dragon1
@@ -60,7 +60,7 @@ def dic_game
 		
 		print "How many rounds would you like to play? "
 		@rounds = gets.chomp.to_i
-		puts " "
+		puts "\n"
 		
 		until @userPoints.length == @rounds || @computerPoints.length == @rounds do
 			def roll
@@ -69,14 +69,14 @@ def dic_game
 			
 				print "Would you like to roll (y or n)? "
 				choice = gets.chomp.strip
-				puts " "
+				puts "\n"
 
 				if choice.downcase == "y"
 					user = rand(1..6) * dice
 					comp = rand(1..6) * dice
 				elsif choice.downcase == "n"
 					puts "Game Ended"
-					puts " "
+					puts "\n"
 
 					play_again()
 				else
@@ -88,17 +88,17 @@ def dic_game
 				if user == comp
 					puts "Tie"
 					puts "You need to roll again please!"
-					puts " "
+					puts "\n"
 
 					roll()
 				elsif user > comp
 					puts "User Wins!"
-					puts " "
+					puts "\n"
 
 					@userPoints << user
 				elsif user < comp
 					puts "You lose"
-					puts " "
+					puts "\n"
 					
 					@computerPoints << comp
 				else
@@ -111,12 +111,12 @@ def dic_game
 
 			if @userPoints.length() == @rounds
 			puts "User wins #{@userPoints.length} to #{@computerPoints.length}!"
-			puts " "
+			puts "\n"
 
 			play_again()
 			elsif @computerPoints.length() == @rounds
 				puts "Computer wins #{@computerPoints.length} to #{@userPoints.length}"
-				puts " "
+				puts "\n"
 
 				play_again()
 			end

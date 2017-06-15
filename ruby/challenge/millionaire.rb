@@ -4,10 +4,10 @@ n = 0
 
 # asks if you would like to play again then exits, starts the game over, or prompts the question again
 def play_again
-	puts " "
+	puts "\n"
 	print "Would you like to play again (y or n)? "
 	@answer = gets.chomp.strip
-	puts " "
+	puts "\n"
 
 	if @answer.downcase == "y"
 		question()
@@ -22,7 +22,7 @@ end
 def winner (choice, n)
 	if choice.downcase == @answers[n]
 		puts "Correct answer!"
-		puts " "
+		puts "\n"
 	else
 		puts "Incorrect answer"
 		puts "You lost the game"
@@ -39,7 +39,7 @@ end
 def question
 	puts "This question is worth $25,000!"
 	puts "Which of these U.S. Presidents appeared on the television series 'Laugh-In'?"
-	puts " "
+	puts "\n"
 	puts "A: Lyndon Johnson  B: Richard Nixon
 C: Jimmy Carter  D: Gerald Ford"
 	choice = gets.chomp.strip
@@ -49,7 +49,7 @@ C: Jimmy Carter  D: Gerald Ford"
 
 	puts "This question is worth $25,000!"
 	puts "In the children's book series, where is Paddington Bear originally from?"
-	puts " "
+	puts "\n"
 	puts "A: India  B: Peru
 C: Canada  D: Iceland"
 	choice = gets.chomp.strip
@@ -59,7 +59,7 @@ C: Canada  D: Iceland"
 
 	puts "This question is worth $25,000!"
 	puts "What letter must appear at the beginning of the registration number of all non-military aircraft in the U.S.?"
-	puts " "
+	puts "\n"
 	puts "A: N  B: A
 C: U  D: L"
 	choice = gets.chomp.strip
@@ -69,7 +69,7 @@ C: U  D: L"
 
 	puts "This question is worth $25,000!"
 	puts "Who delivered the less famous two-hour speech that preceded Abraham Lincoln's two-minute Gettysburg Address?"
-	puts " "
+	puts "\n"
 	puts "A: Wendall Phillips  B: Daniel Webster
 C: Robert G. Ingersoll  D: Edward Everett"
 	choice = gets.chomp.strip
@@ -81,7 +81,7 @@ C: Robert G. Ingersoll  D: Edward Everett"
 end
 
 puts "Welcome to who wants to be a Millionaire!"
-puts " "
+puts "\n"
 
 # loops through the game till the user wants to leave
 until @answer == "n"

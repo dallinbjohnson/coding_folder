@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Embroidable</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <nav>
+	  <ul>
+		  <li><%= link_to "Home", page_home_path %></li>
+			<li><%= link_to "About us", page_about_path %></li>
+			<li><%= link_to "Contact me", page_contact_path %></li>
+		</ul>
+	<nav>
+    <%= yield %>
+  </body>
+</html>

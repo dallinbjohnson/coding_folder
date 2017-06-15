@@ -1,0 +1,148 @@
+html, body {
+  margin: 0;
+}
+body {
+	font-family: arial,sans-serif;
+}
+
+/*Header*/
+
+header {
+	text-align: right;
+	font-size: 13px;
+	margin: 20px;
+}
+a {
+	text-decoration: none;
+	color: black;
+	margin: 10px;
+	color: #666;
+}
+a:hover {
+	text-decoration: underline;
+}
+nav {
+  text-align: right;
+  height: 30px;
+}
+nav ul li {
+	display: inline-block;
+	padding-left: 3px;
+  padding-right: 3px;
+  list-style: none;
+  vertical-align: middle;
+}
+.icon:hover {
+	color: #000;
+}
+#bell {
+	background-color: #666;
+	border-radius: 50%;
+	color: white;
+	padding: 5px;
+}
+#bell:hover {
+	background-color: #000;
+}
+#yoda {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+/*header end*/
+/*Article*/
+
+img.logo {
+	margin: auto;
+	display: block;
+	height: 92px;
+  width: 272px;
+  padding-top: 140px;
+}
+article {
+	text-align: center;
+}
+article input[type="text"] {
+	margin: 10px 30px;
+	width: 550px;
+	padding: 12px;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+	transition: box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
+	border-radius: 2px;
+	border: 1px solid rgba(0,0,0,0.1);
+	background-color: #fff;
+	font-size: 14px;
+	/*background: white url("google_img/mic.png") right no-repeat;
+  padding-right: 17px;
+  background-size: 30px;*/
+}
+article input[type="text"]:hover {
+	box-shadow: 1px 3px 3px 1px rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+}
+article input[type="text"]:focus {
+	outline: none;
+}
+#mic {
+	width: 27px;
+	height: auto;
+	position: absolute;
+	top: 320px;
+	right: 450px;
+}
+article input[type="submit"] {
+	margin: 0 auto;
+	background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  color: #757575;
+  padding: 15px 25px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 2px;
+}
+article input[type="submit"]:hover {
+	color: #000;
+	border: 1px solid lightgrey;
+}
+p {
+	font-size: small;
+	margin-top: 25px;
+}
+p a {
+	color: #1a0dab;
+}
+
+/*Article end*/
+/*Footer*/
+
+footer {
+	background: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  line-height: 40px;
+  font-size: 13px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  margin-right: 20px;
+}
+.foot_left {
+	display: inline-block;
+	text-align: left;
+}
+.foot_right {
+	display: inline-block;
+	text-align: right;
+	float: right;
+  width: 400px;
+  margin: 0px;
+}
+footer a {
+	padding-left: 10px;
+	padding-right: 10px
+}
+
+/*Footer end*/

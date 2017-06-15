@@ -17,5 +17,6 @@ end
 # sentence.split.delete_if{|x| words_to_remove.include?(x.downcase)}.join(' ')
 
 sentence.gsub!(/(\w)\w+\W*/, '\1').upcase!
+sentence.gsub!(" ", "")
 
 puts sentence

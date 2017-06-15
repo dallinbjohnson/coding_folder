@@ -68,7 +68,7 @@ def buy_another
 end
 
 def menu_display
-	puts " "
+	puts "\n"
 	puts "Items available for purchase:"
 	@menu.each do |item, subtype|
 		puts item
@@ -77,7 +77,7 @@ end
 
 # Display the options and ask which items they want
 def buy(n)
-	puts " "
+	puts "\n"
 	puts "Which item number do you want?"
 	purchase = gets.chomp.strip.to_i
 
@@ -98,7 +98,7 @@ def choice_item(choice)
 end
 
 def user_choice
-	puts " "
+	puts "\n"
 	puts "Which type of item would you like?"
 	choice = gets.chomp.strip.chr.upcase
 
@@ -112,12 +112,12 @@ until @again == "N" do
 	buy_another()
 end
 
-puts " "
+puts "\n"
 @items_bought.each do |thing, price|
 	puts "#{thing}: $#{price}"
 end
 
-puts " "
+puts "\n"
 puts "Subtotal: $#{@subtotal}"
 
 total = (@subtotal + (@subtotal.to_f * @tax)).round(2)

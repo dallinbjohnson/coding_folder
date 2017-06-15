@@ -8,7 +8,7 @@ def combine
 end
 
 combine()
-puts " "
+puts "\n"
 
 def larray
 	sarray = ["a","b","c","d"]
