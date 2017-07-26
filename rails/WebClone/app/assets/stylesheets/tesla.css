@@ -1,13 +1,9 @@
-html, body {
-	margin: 0;
-	padding: 0;
-}
-body {
+.tbody {
 	color: white;
 	font-family: sans-serif;
 	font-weight: lighter;
 }
-video {
+.tbody video {
 	min-width: 100%;
 	min-height: 100%;
 	margin: auto;
@@ -16,32 +12,32 @@ video {
 	top: 0px;
 	z-index: -1;
 }
-a {
+.tbody a {
 	color: white;
 	text-decoration: none;
 }
 
 /*Header*/
 
-.logo {
+.tbody .logo {
 	width: 200px;
 	height: auto;
 }
-header ul {
+.tbody header ul {
 	/*display: flex;
 	flex-wrap: wrap;*/
 	text-decoration: none;
 }
-header ul li {
+.tbody header ul li {
 	display: inline-block;
 	vertical-align: middle;
 	margin: 0 10px;
 	font-size: 14px;
 }
-.left {
+.tbody .left {
 	float: left;
 }
-.right {
+.tbody .right {
 	float: right;
 	margin-top: 40px;
 	margin-right: 40px;
@@ -50,19 +46,19 @@ header ul li {
 /*Header end*/
 /*Content*/
 
-content #box {
+.tbody content #box {
 	padding-top: 150px;
 }
-h1 {
+.tbody h1 {
 	font-size: 40px;
 	clear: both;
 	font-weight: lighter;
 	text-align: center;
 }
-content ul {
+.tbody content ul {
 	text-align: center;
 }
-content ul li {
+.tbody content ul li {
 	display: inline-block;
 	vertical-align: middle;
 	text-decoration: none;
@@ -70,15 +66,16 @@ content ul li {
 	padding: 10px 30px;
 	background-color: rgba(0,0,0,0.7);
 	font-weight: lighter;
+	border: 1px solid rgba(0,0,0,0.7);
 }
-content ul li:hover {
+.tbody content ul li:hover {
 	border: 1px solid white;
 	transition-delay: .25s;
 }
-p {
+.tbody p {
 	text-align: center;
 }
-p a:hover {
+.tbody p a:hover {
 	color: red;
 	transition-delay: .3s;
 }
@@ -86,22 +83,22 @@ p a:hover {
 /*Content end*/
 /*Footer*/
 
-footer ul {
+.tbody footer ul {
 	text-align: center;
 	position: absolute;
 	bottom: 0;
 	left: 24%;
 }
-footer ul li {
+.tbody footer ul li {
 	display: inline-block;
 	vertical-align: middle;
 	margin: 0 10px;
 	font-size: 13px;
 }
-footer p {
+.tbody footer p {
 	margin-bottom: 20px;
 }
-.flag {
+.tbody .flag {
 	width: 15px;
 	height: auto;
 }

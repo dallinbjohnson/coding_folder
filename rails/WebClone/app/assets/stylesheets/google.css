@@ -1,38 +1,40 @@
 html, body {
   margin: 0;
+	padding: 0;
 }
-body {
+.gbody {
 	font-family: arial,sans-serif;
+	margin: 70px 0;
 }
 
 /*Header*/
 
-header {
+.gbody header {
 	text-align: right;
 	font-size: 13px;
 	margin: 20px;
 }
-a {
+.gbody a {
 	text-decoration: none;
 	color: black;
 	margin: 10px;
 	color: #666;
 }
-a:hover {
+.gbody a:hover {
 	text-decoration: underline;
 }
-nav {
+.gbody nav {
   text-align: right;
   height: 30px;
 }
-nav ul li {
+.gbody nav ul li {
 	display: inline-block;
 	padding-left: 3px;
   padding-right: 3px;
   list-style: none;
   vertical-align: middle;
 }
-.icon:hover {
+.gbody .icon:hover {
 	color: #000;
 }
 #bell {
@@ -53,17 +55,17 @@ nav ul li {
 /*header end*/
 /*Article*/
 
-img.logo {
+.gbody img.logo {
 	margin: auto;
 	display: block;
 	height: 92px;
   width: 272px;
   padding-top: 140px;
 }
-article {
+.gbody article {
 	text-align: center;
 }
-article input[type="text"] {
+.gbody article input[type="text"] {
 	margin: 10px 30px;
 	width: 550px;
 	padding: 12px;
@@ -77,20 +79,20 @@ article input[type="text"] {
   padding-right: 17px;
   background-size: 30px;*/
 }
-article input[type="text"]:hover {
+.gbody article input[type="text"]:hover {
 	box-shadow: 1px 3px 3px 1px rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
 }
-article input[type="text"]:focus {
+.gbody article input[type="text"]:focus {
 	outline: none;
 }
 #mic {
 	width: 27px;
 	height: auto;
 	position: absolute;
-	top: 320px;
+	top: 390px;
 	right: 450px;
 }
-article input[type="submit"] {
+.gbody article input[type="submit"] {
 	margin: 0 auto;
 	background-color: #f2f2f2;
   border: 1px solid #f2f2f2;
@@ -102,22 +104,22 @@ article input[type="submit"] {
   font-weight: bold;
   border-radius: 2px;
 }
-article input[type="submit"]:hover {
+.gbody article input[type="submit"]:hover {
 	color: #000;
 	border: 1px solid lightgrey;
 }
-p {
+.gbody p {
 	font-size: small;
 	margin-top: 25px;
 }
-p a {
+.gbody p a {
 	color: #1a0dab;
 }
 
 /*Article end*/
 /*Footer*/
 
-footer {
+.gbody footer {
 	background: #f2f2f2;
   border-top: 1px solid #e4e4e4;
   line-height: 40px;
@@ -129,18 +131,18 @@ footer {
   width: 100%;
   margin-right: 20px;
 }
-.foot_left {
+.gbody .foot_left {
 	display: inline-block;
 	text-align: left;
 }
-.foot_right {
+.gbody .foot_right {
 	display: inline-block;
 	text-align: right;
 	float: right;
   width: 400px;
   margin: 0px;
 }
-footer a {
+.gbody footer a {
 	padding-left: 10px;
 	padding-right: 10px
 }

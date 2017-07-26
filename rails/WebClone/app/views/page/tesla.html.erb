@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tesla Clone</title>
+
+	<link rel="stylesheet" type="text/css" href="tesla.css">
+	<style type="text/css">
+		.nav ul {
+			background: none;
+		}
+		.nav ul li {
+			display: inline-block;
+			list-style: none;
+			padding: 10px 25px;
+		}
+		.nav ul li a:hover {
+			color: rgba(000, 000, 000, .5);
+		}
+		.nav ul li:hover {
+    background: none;
+		}
+	</style>
+
+</head>
+<body>
+
+<%= render "shared/nav" %>
+
+<div class="tbody">
+
+<%= video_tag "tesla_img/Tesla_Meets_Ireland.mp4", controls: false, autoplay: true, muted: 
+true, loop: true, type: 
+"video/mp4" %>
+<%= video_tag "tesla_img/Tesla_Meets_Ireland.webm", controls: false, autoplay: true, muted: 
+true, loop: true, type: 
+"video/webm" %>
+
+<header>
+
+	<ul class="left">
+		<li><a href="https://www.tesla.com/" target="_blank"><%= image_tag("tesla_img/tesla_logo.gif", :alt => "Tesla Logo", :class=> "logo") %></a></li>
+		<li><a href="#">MODEL S</a></li>
+		<li><a href="#">MODEL X</a></li>
+		<li><a href="#">MODEL 3</a></li>
+		<li><a href="#">ENERGY</a></li>
+	</ul>
+
+	<ul class="right">
+		<li><a href="#">CHARGING</a></li>
+		<li><a href="#">UPDATES</a></li>
+		<li><a href="#">SUPPORT</a></li>
+		<li><a href="#">FIND US</a></li>
+		<li><a href="#">SHOP</a></li>
+		<li><a href="#">MY TESLA</a></li>
+	</ul>
+
+</header>
+
+<content>
+	
+	<div id="box">
+		<h1>Longest Range. Active Safety.</h1>
+		<h1>Quickest Production Car on Earth.</h1>
+
+		<ul>
+			<li><a href="#">ORDER YOURS</a></li>
+			<li><a href="#">NEW INVENTORY</a></li>
+			<li><a href="#">USED INVENTORY</a></li>
+			<li><a href="#">TEST DRIVE</a></li>
+		</ul>
+
+		<br>
+
+		<p><a href="#">THE NEWSLETTER &#10148</a></p>
+
+	</div>
+
+</content>
+
+<footer>
+
+	<ul>
+		<li><a href="#">Tesla © 2017</a></li>
+		<li><p>.</p></li>
+		<li><a href="#">Privacy & Legal</a></li>
+		<li><p>.</p></li>
+		<li><a href="#">Contact</a></li>
+		<li><p>.</p></li>
+		<li><a href="#">Careers</a></li>
+		<li><p>.</p></li>
+		<li><a href="#">Forums</a></li>
+		<li><p>.</p></li>
+		<li><a href="#">Locations</a></li>
+		<li><p>.</p></li>
+		<li><a href="#"><%= image_tag("tesla_img/flag.gif", :alt => "USA Flag", :class=> "flag") %></a></li>
+	</ul>
+
+</footer>
+
+</div>
+
+
+</body>
+</html>

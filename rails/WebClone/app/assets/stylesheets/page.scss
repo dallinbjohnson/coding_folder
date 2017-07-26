@@ -1,0 +1,54 @@
+/*// Place all the styles related to the Page controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/*/
+
+@font-face {
+	font-family:'beyond_the_mountains';
+	src:font-url('Beyond_The_Mountains/beyond_the_mountains.ttf');
+	src:font-url('Beyond_The_Mountains/beyond_the_mountains.eot');
+	src: local('Road_Rage'), url('Beyond_The_Mountains/beyond_the_mountains.ttf') format('truetype');
+}
+@font-face {
+	font-family:'beyond_the_mountains';
+	src:font-url('Beyond_The_Mountains/beyond_the_mountains.ttf');
+}
+
+.hbody {
+	background: image-url('wood-old-deck.jpg') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	color: #fff;
+	font-family: serif;
+	margin: 70px 0;
+}
+.profile_img {
+	width: 550px;
+	height: 550px;
+	border-radius: 50% 50% 50% 50%;
+	margin: auto;
+	display: block;
+	border: 5px solid #000;
+}
+.hbody h1, .hbody h2 {
+	text-align: center;
+	font-size: 40px;
+	font-family: 'beyond_the_mountains', Geneva, serif;
+}
+.hbody p {
+	text-align: justify;
+	border: 1px solid black;
+	margin: 10px 20%;
+	font-size: x-large;
+	background-color: rgba(128, 128, 128, 0.5);
+	padding: 20px;
+}
+.hbody p a {
+	text-decoration: none;
+	color: 	#1E90FF;
+}
+.hbody p a:visited {
+	color: #00CED1;
+}
+.hbody p a:hover {
+	color: 	#00BFFF;
+}

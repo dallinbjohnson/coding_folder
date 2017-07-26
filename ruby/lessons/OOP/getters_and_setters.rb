@@ -18,6 +18,15 @@ class ApiConnector
 	def test_method
 		puts "Testing class call"
 	end
+
+	# Should just be used in side of the class
+	private
+		def secret_method 
+			puts "A secret message!"
+		end
+	# It is very similar to private methods
+	protected
+
 end
 
 # Sets the class to a variable
@@ -45,6 +54,7 @@ puts "\n"
 class SmsConnector < ApiConnector
 	def send_sms
 		puts "Sending sms..."
+
 	end
 end
 

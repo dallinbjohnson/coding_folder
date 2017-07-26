@@ -1,0 +1,48 @@
+<div class="gbody">
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Gmail</a></li>
+				<li><a href="#">Images</a></li>
+				<li><a href="#" class="icon" name="box_grid"><i class="material-icons">&#xe5c3;</i></a></li>
+				<li><a href="#" name="bell"><i style="font-size:15px" class="fa" id="bell">&#xf0f3;</i></a></li>
+				<li><a href="#" name="circle"><%= image_tag("google_img/yoda.png", :alt => "Yoda profile pic", :id=> "yoda") %></a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+	<article>
+
+		<%= link_to image_tag("google_img/googlelogo.png", :alt => "Google Logo", :class=> "logo"), 'https://www.google.com/', :target => "_blank" %>
+
+		<input type="text" name="googlesearch">
+		<a href="#"><%= image_tag("google_img/mic.png", :alt => "Mic icon", :id=> "mic") %></a>
+
+		<br>
+		<br>
+
+		<input value="Google Search" aria-label="Google Search" type="submit">
+
+		<input value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" type="submit">
+
+		<p><a href="#">Explore the Syrian refugee crisis,</a>in collaboration with the UN Refugee Agency</p>
+		
+	</article>
+
+	<footer>
+
+		<div class="foot_left" >
+			<a href="#">Advertising</a>
+			<a href="#">Business</a>
+			<a href="#">About</a>
+		</div>
+
+		<div class="foot_right">
+			<a href="#">Privacy</a>
+			<a href="#">Terms</a>
+			<a href="#">Settings</a>
+		</div>
+
+	</footer>
+</div>

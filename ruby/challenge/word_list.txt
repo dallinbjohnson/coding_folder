@@ -1,0 +1,467 @@
+# - Nouns
+factory reset button
+blood rage
+idiot
+toaster
+legend
+death wish
+therapy
+goal in life
+marketing idea
+psychic
+knife
+sandwich
+hunting ground
+lettuce
+kitty
+friendly grandma
+french chef
+antidepressant drug
+corn cake
+president of the night
+candlestick maker
+coffee pot
+brethren
+national security agency
+tank
+useless brakes
+international law enforcement agency
+sound barrier
+skinny woman
+private investor
+main people
+stock car
+elastic band
+whole blood
+telephone
+mad cow disease
+scourge upon the earth
+rough-skinned newt
+karate
+pistol
+legal warrant
+people who are hurt
+idea he suggested
+party of the first part
+place of business
+double fault
+kitty cat
+famous landscape painting
+hairy legs
+old irish cottage
+pocket flask
+liquid oxygen
+laser beams
+preventive strike
+dingle berry
+reading party
+generalized bond
+indirect expression
+messiness
+love of her life
+trust fund
+volcanic crater
+travel guidebook
+electric furnace
+internal respiration
+police squad
+mad-dog skullcap
+sneaky criminal
+new version
+keepsake machete
+gaming laptop
+hissy fit
+dog poop
+dragon
+mediation
+patrolman
+pervert
+toilet seat
+haunted graveyard
+really tough guy
+twinkling uncleanness
+wrinkle
+personal credit line
+multi-billionaire
+mental disorder
+sweet tailpipe
+boiling water
+deer antler
+background story
+mood
+nibblets
+striped hyena
+weed whacker
+
+# - Verbs
+surround
+stab
+return
+medicate
+blindside
+boogie
+flap
+trip
+swat
+suck in
+harass
+trap
+snoop
+explode
+sketchy
+scatter
+challenge
+fight
+bury
+splatter
+smack
+
+# - Adjectives
+dead
+hairless
+sadistic
+metal
+wild
+domesticated
+abnormal
+medicated
+cocky
+massive
+disrespectful
+impressive
+out of control
+internet worthy
+hilarious
+sexy
+hot
+very tactful
+bearded
+duck-like
+violent
+slimy
+insanely creepy
+embarrassed to the bone
+self-centered
+talking
+naked
+angry
+shaky
+deep
+sick
+zippy
+sticky
+fluffy
+frozen
+unholy
+painfully honest
+filthy
+fighting
+bonkers
+harsh
+frisky
+greedy
+crawly
+insane
+hideous
+abusive
+drunken
+hateful
+idiotic
+twisted
+useless
+yapping
+magical
+indecent
+arrogant
+confused
+flirting
+high-end
+insecure
+maniacal
+sickened
+slippery
+stubborn
+tripping
+vengeful
+sinister
+costumed
+cowardly
+haunting
+startled
+alcoholic
+demanding
+shivering
+offensive
+nighttime
+startling
+disgusting
+slap happy
+disturbing
+adulterous
+blathering
+flickering
+rebellious
+impertinent
+bull headed
+hyperactive
+infuriating
+outnumbered
+pea-brained
+territorial
+underhanded
+zombie like
+mischievous
+at-the-ready
+free-loading
+house-broken
+up-to-no-good
+cruel-hearted
+misunderstood
+narrow-minded
+self-absorbed
+fiercely-loyal
+out-of-control
+fear-inspiring
+mentally impaired
+
+# - Exclamations and Interjections
+bah
+bam
+duh
+eek
+eww
+jfc
+man
+not
+nup
+omg
+wow
+wtf
+yea
+baby
+burn
+cool
+crap
+d'oh
+dang
+fine
+foxy
+geez
+grrr
+pfft
+phew
+piss
+rats
+safe
+veto
+woot
+word
+yeah
+as if
+bammo
+check
+daddy
+drats
+grand
+great
+jeeze
+lordy
+me-ow
+oh no
+peace
+plush
+right
+roger
+shoot
+showy
+solid
+uh-oh
+yipee
+anywho
+blimey
+bloody
+bright
+cheers
+encore
+killer
+lavish
+lovely
+no duh
+no way
+ownage
+please
+superb
+uh-huh
+woohoo
+zackly
+blow me
+dear me
+far out
+get out
+hot dog
+no fear
+no idea
+no prob
+oh well
+oh yeah
+opulent
+or what
+perfect
+radical
+rock on
+shut up
+sublime
+whatevs
+yeah no
+yeppers
+alrighty
+big deal
+bleeding
+bring it
+coolness
+for real
+freaking
+get bent
+get lost
+get real
+glorious
+go crazy
+handsome
+imposing
+knickers
+knockout
+la di da
+negative
+negatory
+nice one
+nunh unh
+oh goody
+ohmigosh
+patootie
+right-on
+screw it
+shoot me
+splendid
+stunning
+whoopsie
+alley oop
+big whoop
+boy howdy
+brilliant
+craziness
+dear lord
+dearie me
+drop dead
+forget it
+good call
+luxurious
+marvelous
+oh really
+outasight
+peace out
+puh-leeze
+ravishing
+righteous
+righty-ho
+shout-out
+sumptuous
+sweetness
+way to go
+all righty
+attractive
+bon voyage
+bottoms up
+centerfold
+chrissakes
+cool beans
+fancy that
+film at 11
+glittering
+good to go
+gor blimey
+holy moses
+impressive
+no diggity
+no kidding
+not hardly
+oh my heck
+oh my lord
+oh my word
+okey dokey
+roger that
+think fast
+yeah right
+come off it
+condolences
+darn tootin
+get stuffed
+holy smokes
+hot diggety
+in the heck
+killer show
+no problemo
+oh my stars
+point taken
+resplendent
+take a hike
+there ya go
+you know it
+cool bananas
+easy does it
+fiddlesticks
+give big-ups
+good-looking
+no way, Jose
+not a chance
+over and out
+snakes alive
+bless my soul
+heaven forbid
+lock and load
+man overboard
+nothing doing
+rock and roll
+splendiferous
+that's a girl
+thats just me
+don't go there
+most certainly
+never you mind
+rise and shine
+what the deuce
+crap on a stick
+don't I know it
+get out of here
+get out of town
+pat on the back
+doin' my head in
+easy on the eyes
+front and center
+give me strength
+good looking out
+here we go again
+I don't think so
+it aint happenin
+not in this life
+not on your life
+when in the heck
+who's your daddy
+here goes nothing
+over my dead body
+for cryin out loud
+I'll drink to that
+good luck with that
+not in this universe
+and you know this man
+every man for himself
+hear you loud and clear
+don't even think about it
+not even if you begged me
+not for a million dollars
+it's probably for the best
+I've died and gone to heaven
+there is still hope for humanity
+that's an interesting interpretation
+how do I say no? let me count the ways
+do you mind walking me through your logic
+you have no clue what you re doing, do you?
