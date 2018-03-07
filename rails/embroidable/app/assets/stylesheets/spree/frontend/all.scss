@@ -1,0 +1,130 @@
+/*
+* This is a manifest file that includes stylesheets for spree_frontend
+ *= require normalize
+ *= require spree/frontend/screen
+*/
+
+@import "bootstrap";
+
+// @font-face {
+//   font-family: 'Acme';
+//   src:font-url('Acme/Acme-Regular.ttf')
+// }
+
+// @font-face {
+//   font-family: 'Montserrat';
+//   src:font-url('Montserrat/Montserrat-Regular.ttf')
+// }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+}
+
+#wrapper {
+	margin-top: 100px;
+}
+
+.masthead {
+	background-color: white;
+	border-bottom: .3px solid rgba(0, 0, 0, .7);
+}
+.navbar-brand a {
+	// color: #62c9f3;
+	color: #0275d8;
+  font-family: 'Dancing Script', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  text-transform: lowercase;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-decoration: none;
+}
+.navbar-brand a:hover {
+	color: black;
+}
+
+.navbar-nav a,
+.navbar-nav a:focus {
+	text-transform: uppercase;
+  font-weight: 700;
+  font-size: 17px;
+  color: #0275d8;
+	text-decoration: none;
+}
+
+.navbar-default {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.navbar-styles {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#62c9f3' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid white;
+}
+
+/*
+ * Solidus override styles
+ */
+
+ul#products li .price {
+	color: black;
+}
+
+// * {
+// 	border: 1px solid red;
+// }
+.container {
+	margin: 20px;
+	width: 100%;
+}
+.container .twelve.columns.omega{
+	width: 80%;
+}
+header {
+	width: 100%;
+}
+.container .sixteen.columns {
+	width: 95%;
+}
+.container #wrapper .sixteen#content  {
+	margin: 0 10%;
+	width: 70%;
+}
+#wrapper {
+	max-width: 100%;
+}
+header a { // #home-link
+	// font-size: 1.8em !important;
+}
+nav#top-nav-bar {
+	width: 69%
+}
+nav #main-nav-bar {
+	margin: 10px auto;
+}
+ul#products li {
+	width: 20%;
+}
+
+#product-images #main-image img {
+	object-fit: contain;
+	max-width: 340px;
+}
+ul#products li .product-image img {
+	min-height: 100px;
+}

@@ -1,11 +1,29 @@
 # Computer guessing game where cpu tells you a number is higher or lower from 1 - 25.
 
-print "Give a number between 1 - 25 that a computer can guess: "
-@user = gets.chomp.strip.to_i
+require 'pry'
 
-@number = [*1..25]
+def prompt(default, text)
+  if default == ""
+  	print(text + ' ')
+  else
+  	print(text + ' [' + default + '] ')
+  end
+  result = gets.chomp.strip
+  prompt(default, text) if result == "" && default == ""
+  return result.empty? ? default : result
+end
 
-@counter = -1
+def number
+	print "Give a number between 1 - 25 that a computer can guess: "
+	@user = gets.chomp.strip.to_i
+
+	@number = [*1..25]
+	@counter = 0
+
+	computer_guess()
+end
+
+
 
 def computer_guess
 	@computer = @number.sample
@@ -37,11 +55,27 @@ def high_low
 		computer_guess()
 	else
 		puts "\n"
-		puts "User: #{@user} Computer: #{@computer}"
+		puts "User: #{@user} Computer: #{@computer}, Computer Wins!"
 		puts "The computer guessed #{@counter} times to get the right answer!!"
 	end
 end
 
+def play_again
+	puts "\n"
+	@answer = (prompt("y", "Would you like to play again (y or n)?"))
+	puts "\n"
 
-computer_guess()
+	if @answer.downcase == "y"
+		return
+	elsif @answer.downcase == "n"
+		exit
+	else
+		play_again()
+	end
+end
 
+until @answer == "n"
+number()
+
+play_again()
+end

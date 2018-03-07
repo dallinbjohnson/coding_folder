@@ -1,0 +1,17 @@
+@import "bootstrap";
+
+body {
+	color: #000;
+	background-color: #fff;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 12pt;
+	margin: 0;
+}
+.tools {
+	display: none;
+}
+
+@page { 
+	size: 8.5in 11in;
+	margin: 2cm;
+}

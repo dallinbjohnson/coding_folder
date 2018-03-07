@@ -16,3 +16,7 @@ x = {:a => "foo", :b => "bar"}.map {|a,b| "#{a}=#{b}"}.join('&')
 p x
 x = {:a => "foo", :b => "bar", :lat => "120.343", :long => "33.212"}.map {|a,b| "#{a}=#{b}"}.join('&')
 p x
+
+# map array with a past in index or counter
+# array.map.with_index { |item, index| item + index }
+p [*1..10].map!.with_index(0) { |item, i| item + i }

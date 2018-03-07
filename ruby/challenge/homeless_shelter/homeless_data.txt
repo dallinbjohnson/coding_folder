@@ -1,5 +1,7 @@
-Ty,Johnson,21,,2017-07-20,,3
-Shayla,Johnson,19,,2017-07-20,,3
+Ty,Johnson,21,,2017-07-20,2017-09-02,44
+Shayla,Johnson,19,,2017-07-20,,44
 Daniel,Coley,25,Death,2017-07-21,2017-07-21,0
-Dev,Thomas,24,,2017-07-21,,2
-Dallin,Johnson,23,,2017-10-10,,-79
+Dev,Thomas,24,,2017-07-21,,43
+Dallin,Johnson,23,,2017-10-10,,-38
+Dhy,Fdfs,27,,2017-09-02,,0
+Fesdgrtfy,Doe,90,,2017-08-01,2017-09-02,32

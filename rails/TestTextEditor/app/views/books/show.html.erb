@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<div class="tools">
+	<%= link_to 'Edit', edit_book_path(@book) %> |
+	<%= link_to 'Back', books_path %>
+</div>
+
+<h1 class="title">
+  <%= @book.title.titleize %>
+</h1>
+
+<p class="body">
+  <%= @book.body.html_safe %>
+</p>
+
+<%# File.readlines(@file).read do |line| %>
+	<p><%#= line %></p>
+<%# end  %>

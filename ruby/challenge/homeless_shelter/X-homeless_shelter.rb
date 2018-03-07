@@ -5,7 +5,6 @@
 # Add a feature to your program that will check out a person from your list. Store their data in a separate list that stores their info and starts a timer for 1 week.
 
 # Turn them into dragons.
-
 require 'terminal-table'
 require 'date'
 require 'csv'
@@ -28,7 +27,7 @@ end
 
 def prompt(default, text)
   if default == ""
-  	print(text + ' ') 
+  	print(text + ' ')
   else
   	print(text + ' [' + default + '] ')
   end
@@ -39,7 +38,7 @@ def prompt(default, text)
 end
 
 def menu_method
-	@menu = ["Check-in people", "Check-out People", "Check-in Table", "Check-out Table"]
+	@menu = ["Check-in people", "Check-out People", "Check-in Table", "Check-out Table", "Exit"]
 	option_num = 0
 
 	@menu.each { |option| puts "#{option_num}) #{option}"; option_num += 1 }
@@ -59,6 +58,8 @@ def menu_method
 		days = prompt('7', 'How many days allowed to stay before check-out?').to_i
 		@rows2Filtered = @rows2.find_all { |co_person| (Date.today - co_person[4]) >= days }
 		out_table_method
+	when 4
+		@exit_program = "y"
 	end
 end
 
@@ -85,7 +86,7 @@ def info
   @first_name = (prompt("", "What's your first name?")).capitalize
   @last_name = (prompt("Doe", "What's your last name?")).capitalize
   @age = (prompt("27", "What's your Age?")).to_i
-  
+
   medication = (prompt("n", "Do you have an illnesses that needs medication (y or n)?"))
 	if medication.downcase == 'y'
 		print "What illnesses do you have? "
@@ -147,7 +148,7 @@ def add_another
 end
 
 def in_table_method
-	table = Terminal::Table.new :title => "Homeless Shelter", :headings => ['First', 'Last', 'Age', 'Illnesses', 'Check-in Date', 'Check-out Date', 'Days'], :rows => @rows 
+	table = Terminal::Table.new :title => "Homeless Shelter", :headings => ['First', 'Last', 'Age', 'Illnesses', 'Check-in Date', 'Check-out Date', 'Days'], :rows => @rows
 
 	table.style = {:all_separators => true, :border_x => "=", :border_i => "+", :alignment => :center}
 
@@ -192,7 +193,7 @@ def check_out_done
 end
 
 def out_table_method
-	checkout_table = Terminal::Table.new :title => "Homeless Shelter Checkout list", :headings => ['First', 'Last', 'Age', 'Illnesses', 'Check-in Date', 'Check-out Date', 'Days'], :rows => @rows2Filtered 
+	checkout_table = Terminal::Table.new :title => "Homeless Shelter Checkout list", :headings => ['First', 'Last', 'Age', 'Illnesses', 'Check-in Date', 'Check-out Date', 'Days'], :rows => @rows2Filtered
 
 	checkout_table.style = {:all_separators => true, :border_x => "=", :border_i => "+", :alignment => :center}
 
@@ -200,10 +201,10 @@ def out_table_method
 	puts "\n"
 end
 
-def exit_method
-	@exit_program = (prompt("n", "Would you like to exit (y or n)?"))
-	puts "\n"
-end
+# def exit_method
+# 	@exit_program = (prompt("n", "Would you like to exit (y or n)?"))
+# 	puts "\n"
+# end
 
 @exit_program = 'n'
 until @exit_program.downcase == 'y'
@@ -211,13 +212,12 @@ until @exit_program.downcase == 'y'
 
 	File.write("homeless_data.txt", @rows.map(&:to_csv).join)
 
-	exit_method()
+	# exit_method()
 end
 
 # Just for Fun!!!
 dragons = (prompt("n", "Would you like to turn all the homeless people in to Dragons (y or n)?")).downcase
 if dragons == "y"
 	@rows.map { |person| person[0] = "Dragon" }
+	in_table_method()
 end
-
-in_table_method() if dragons == "y"

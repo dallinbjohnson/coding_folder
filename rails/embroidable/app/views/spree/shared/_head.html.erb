@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+<title><%= title %></title>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport">
+<%== meta_data_tags %>
+<%= canonical_tag(current_store.url) %>
+<%= favicon_link_tag 'favicon.ico' %>
+<%= stylesheet_link_tag 'spree/frontend/all', media: 'screen' %>
+<%= csrf_meta_tags %>
+<%= javascript_include_tag 'spree/frontend/all' %>
+<!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js"></script>
+<![endif]-->
+
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script:400" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+<%= yield :head %>

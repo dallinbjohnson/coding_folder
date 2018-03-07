@@ -1,0 +1,64 @@
+<!-- <nav class="columns sixteen">
+  <ul id="main-nav-bar" class="inline" data-hook>
+    <li id="home-link" data-hook><%#= link_to "About", "/#about"  %></li>
+    <li id="home-link" data-hook><%#= link_to "Services", "/#services"  %></li>
+    <li id="home-link" data-hook><%#= link_to "Contact", "/#contact"  %></li>
+    <li id="home-link" data-hook><%#= link_to Spree.t(:store), spree.root_path %></li>
+    <li id="link-to-cart" data-hook>
+      <noscript>
+        <%#= link_to Spree.t(:cart), spree.cart_path %>
+      </noscript>
+      &nbsp;
+    </li>
+  </ul>
+  <script>Spree.fetch_cart('<%#= j spree.cart_link_path %>')</script>
+</nav>
+ -->
+
+<div class="masthead fixed-top">
+  <div class="inner navbar-default">
+    <nav class="nav nav-masthead navbar navbar-toggleable-md">
+      <button class="navbar-toggler navbar-toggler-right navbar-styles" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="navbar-header">
+        <h3 class="masthead-brand navbar-brand"><%= link_to "embroidable", "/" %></h3>
+      </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" id="navArea">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <%= link_to "About", "/#about", class: "nav-link page-scroll" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Services", "/#services", class: "nav-link page-scroll"  %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Contact", "/#contact", class: "nav-link page-scroll"  %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Store", spree.root_path, class: "nav-link page-scroll" %>
+          </li>
+          <% if spree_current_user %>
+            <li class="nav-item"><%= link_to "Admin", "/store/admin", class: "nav-link" if current_spree_user.admin? %></li>
+            <li class="nav-item"><%= link_to Spree.t(:my_account), spree.account_path, class: "nav-link" %></li>
+            <li class="nav-item"><%= link_to Spree.t(:logout), spree.logout_path, class: "nav-link" %></li>
+          <% else %>
+            <li id="link-to-login nav-item"><%= link_to Spree.t(:login), spree.login_path, class: "nav-link" %></li>
+          <% end %>
+          <li class="nav-item">
+            <span class="nav-link">
+              <span id="link-to-cart" data-hook>
+                <noscript>
+                  <%= link_to Spree.t(:cart), spree.cart_path %>
+                </noscript>
+                &nbsp;
+              </span>
+              <script>Spree.fetch_cart('<%= j spree.cart_link_path %>')</script>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<h1>Home</h1>
+<p>Find me in app/views/pages/home.html.erb</p>
+
+<%= form_tag(create_event_url, :method => :post) do |f|%>
+	<div class="form-group">
+		<%= label_tag :summary, "Title" %>
+		<%= cktext_area_tag :summary, "", cols: 40, class: "form-control" %>
+	</div>
+
+	<div class="form-group">
+		<%= label_tag :description, "Description" %>
+		<%= cktext_area_tag :description, "", cols: 40, ckeditor: { uiColor: '#AADC6E', toolbar: 'mini' }, class: "form-control" %>
+	</div>
+
+	<%= submit_tag 'Add Event', class: 'btn btn-primary btn-block' %>
+<% end %>
