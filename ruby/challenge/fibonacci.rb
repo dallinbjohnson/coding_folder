@@ -1,5 +1,5 @@
 # Do fibonacci
-# 0 + 1 = 1 + 2 = 3 + 2 = 5 + 4 = 9
+# 0 + 1 = 1 + 1 = 2 + 1 = 3 + 2 = 5 + 3 = 8 + 5 = 13
 
 print "How high would you like to do the fibonacci sequence? "
 max = gets.chomp.strip.to_i

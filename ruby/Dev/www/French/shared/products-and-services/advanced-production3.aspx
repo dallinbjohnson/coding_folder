@@ -80,7 +80,7 @@
 						<div class="row">
 							<div class="col-md-12">
 								
-				                <p>Everyone wants performance and affordability. And this is especially true for SMBs – one of the strongest markets for A4 colour printers and MFPs.</p>
+				                <p>Everyone wants performance and affordability. And this is especially true for SMBs &ndash; one of the strongest markets for A4 colour printers and MFPs.</p>
 				                <p>Now you can meet that growing demand with the new WorkCentre<sup>&reg;</sup> 6515 and Phaser<sup>&reg;</sup> 6510.</p>
 				                <p>Direct replacements for the WorkCentre 6505 and Phaser 6500, this latest family of affordable machines deliver superb image quality, impressive print speeds, excellent media handling and effortless mobile connectivity.</p> 
 								<p>What's more, we are so confident of their reliability that we've given a FREE lifetime warranty<sup><a href="#footnote">1</a></sup> to each one! </span>Here are the highlights:</p>
@@ -180,7 +180,7 @@
 						<div class="row">
 							<div class="col-md-8">
 								
-                				<h4><b>Update your website – WorkCentre 6515</b></h4>
+                				<h4><b>Update your website &ndash; WorkCentre 6515</b></h4>
 				                <ul>
 				                    <li>Product listing &emsp; <a href="../marketing/optimise-your-website.aspx#iCECatdatafeed" server">IceCat</a> &emsp; <a href="#backpacklink">Marketing Copy</a><%--<ResellerViewControls:BackpackLink runat="server" TargetSystem="SmartCentre" TargetUrl="https://smartcentre.xerox.com/auth/portalauth.aspx" Destination="/Products-and-Services/Office/Products/Color-Multifunction/WorkCentre-6515/" LinkText="Marketing Copy"/>--%></li>
 				                    <li>Evergreen link to the <a href="http://www.office.xerox.com/latest/65XBR-01E.pdf" target="_blank">product brochure</a></li>

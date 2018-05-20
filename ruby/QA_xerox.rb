@@ -25,8 +25,8 @@ require 'diffy' # optional! uncomment!
 require 'rouge'
 
 # C:/PerforceHome/depot/Xerox/Xerox-Europe.RV.TreeHouseI.com/
-@prodPath = "Prod/www/French/shared/products-and-services/advanced-production2.aspx" # advanced-production.aspx
-@devPath = "Dev/www/French/shared/products-and-services/advanced-production2.aspx"
+@prodPath = "production-print-solutions-tools.aspx" # advanced-production.aspx
+@devPath = "production-print-solutions-tools1.html"
 
 def prompt(default, text)
   if default == ""

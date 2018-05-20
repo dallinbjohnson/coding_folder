@@ -1,0 +1,17 @@
+atom-beautify@0.32.2
+atom-bootstrap4@1.4.0
+atom-live-server@2.2.0
+autoclose-html@0.23.0
+column-select@1.0.1
+emmet@2.4.3
+file-icons@2.1.19
+highlight-selected@0.13.1
+indent-guide-improved@1.4.13
+minimap@4.29.8
+minimap-highlight-selected@4.6.1
+pigments@0.40.2
+platformio-ide-terminal@2.8.1
+ruby-block@0.3.6
+script@3.17.3
+todo@0.6.0
+

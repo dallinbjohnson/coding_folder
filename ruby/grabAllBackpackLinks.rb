@@ -17,7 +17,7 @@ def prompt(default, text)
   return result.empty? ? default : result
 end
 
-def folder_names
+def folder_name
 	print "what is the folder name/path to folder, you want to be used? "
 	folder = gets.chomp.strip
 	puts "\n"
@@ -36,24 +36,24 @@ def folder_names
 		puts "#{folderArr.join(', ')} folder dose not exist!"
 		puts "\n"
 
-		folder_names()
+		folder_name()
 	end
 end
 
 def find_files
   @allBackpackLinks = []
-	folder, url = folder_names()
+	folder, url = folder_name()
 
   allFiles = Dir["#{folder}/**/*.aspx", "#{folder}/**/*.ascx"]
 
   allFiles.each do |path|
-    backpack_links(path, url)
+    all_backpack_links(path, url)
   end
 
   write_to_spreadsheet()
 end
 
-def backpack_links(path, url)
+def all_backpack_links(path, url)
   contentsFile = File.open(path, "r"){ |file| file.read }
   contentsFile = contentsFile.gsub(/<!--.*?-->|<%--.*?--%>/m, "")
 
@@ -106,6 +106,8 @@ def menu_method
 		find_files()
 	when 1
 		exit_program()
+  else
+    menu_method()
 	end
 end
 
