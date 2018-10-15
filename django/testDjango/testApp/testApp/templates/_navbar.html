@@ -1,0 +1,20 @@
+<nav class="fixed split-nav">
+  <div class="nav-brand">
+    <h2><a href="{% url 'pages:home' %}">Home</a></h3>
+  </div>
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible">
+    <button class="btn-small btn-mobile">
+      <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+    </button>
+    <div class="collapsible-body">
+      <ul class="inline">
+        <li><a href="{% url 'polls:index' %}">Polls</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

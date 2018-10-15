@@ -1,0 +1,244 @@
+/**
+  Global PaperCSS Config
+*/
+@import url("https://fonts.googleapis.com/css?family=Neucha|Patrick+Hand+SC");
+/**
+  This Loop will generate the various .text- and .background- classes
+  based on the $colors map above.
+*/
+.text-primary {
+  color: #41403E; }
+
+.background-primary {
+  background-color: #c1c0bd; }
+
+.text-secondary {
+  color: #0071DE; }
+
+.background-secondary {
+  background-color: #deefff; }
+
+.text-success {
+  color: #86a361; }
+
+.background-success {
+  background-color: #d0dbc2; }
+
+.text-warning {
+  color: #ddcd45; }
+
+.background-warning {
+  background-color: #f5f0c6; }
+
+.text-danger {
+  color: #a7342d; }
+
+.background-danger {
+  background-color: #f0cbc9; }
+
+.text-muted {
+  color: #868e96; }
+
+.background-muted {
+  background-color: #e6e7e9; }
+
+/**
+  Assign a border style to a component selector.
+  @param    integer
+  @default  1
+*/
+/**
+  Mixin for setting responsive breakpoints
+  @param string | integer
+  @default null
+*/
+/**
+  Useful helper mixins
+*/
+/*
+  Add transform: translate() with browser prefixes.
+  Same syntax for translate() and translate3d()
+  To get 3D add a $z value and set 'true'
+  @param string | boolean
+  @default 0 | false
+*/
+/*
+  Add global transition styles to selector
+  @param string
+  @default all | 235ms | ease-in-out | 0
+*/
+/**
+  Set the shadow type for a component
+  @param    string
+  @default  regular
+*/
+body, html {
+  height: 100%;
+  padding-top: 1rem; }
+
+#body-background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url("../images/tocos.jpg") no-repeat, #533a16;
+  background-size: cover;
+  background-blend-mode: lighten;
+  -webkit-filter: opacity(90%);
+  filter: opacity(90%); }
+
+/*
+ * Navbar Start
+ */
+nav {
+  display: flex;
+  z-index: 100;
+  width: 100%;
+  background-color: white;
+  padding-bottom: 1rem; }
+  @media only screen and (max-width: 768px) {
+    nav {
+      display: block; } }
+  nav .collapsible {
+    display: flex;
+    flex-direction: column; }
+  nav .collapsible:nth-of-type(1) {
+    border-top: 1px solid #e6e7e9; }
+  nav .collapsible .collapsible-body {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0 .75rem;
+    margin: 0;
+    background-color: rgba(204, 204, 204, 0.03);
+    border-bottom: 1px solid #e6e7e9;
+    -webkit-transition: all 235ms ease-in-out 0s;
+    -moz-transition: all 235ms ease-in-out 0s;
+    -o-transition: all 235ms ease-in-out 0s;
+    transition: all 235ms ease-in-out 0s; }
+  nav .collapsible input {
+    display: none; }
+  nav .collapsible input:checked + label {
+    color: #41403e; }
+  nav .collapsible input[id^=collapsible]:checked ~ div.collapsible-body {
+    opacity: 1;
+    max-height: 960px;
+    padding: .75rem .75rem;
+    margin: 0; }
+  nav .collapsible label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: .75rem .75rem;
+    font-weight: 600;
+    text-align: center;
+    color: #41403e;
+    border-bottom: 1px solid #e6e7e9; }
+  nav .collapsible label:hover {
+    color: #868e96;
+    cursor: pointer; }
+  nav .bar1,
+  nav .bar2,
+  nav .bar3 {
+    background-color: #41403E;
+    border-bottom: 5px solid #41403E;
+    border-bottom-left-radius: 15px 5px;
+    border-bottom-right-radius: 15px 3px;
+    color: #41403E;
+    margin: 6px 0;
+    transition: 0.4s;
+    width: 2rem; }
+  nav .bar1 {
+    margin-top: 0; }
+  nav .bar3 {
+    margin-bottom: 0; }
+  nav .collapsible input[id^=collapsible]:checked + button .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 7px);
+    transform: rotate(-45deg) translate(-9px, 7px); }
+  nav .collapsible input[id^=collapsible]:checked + button .bar2 {
+    opacity: 0; }
+  nav .collapsible input[id^=collapsible]:checked + button .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -9px);
+    transform: rotate(45deg) translate(-8px, -9px); }
+  nav.split-nav {
+    justify-content: space-between; }
+  nav.fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0; }
+  nav div {
+    margin: 0 1rem; }
+  nav ul.inline {
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 10px; }
+  nav ul.inline li {
+    display: inline-block;
+    margin: 0 0.5rem; }
+    @media only screen and (max-width: 768px) {
+      nav ul.inline li {
+        display: block;
+        margin: 1rem 0; } }
+  nav a {
+    padding-bottom: .1rem;
+    background-image: none;
+    border-bottom: 5px solid #41403E;
+    border-bottom-left-radius: 15px 3px;
+    border-bottom-right-radius: 15px 5px;
+    color: #41403E;
+    text-decoration: none; }
+  nav a:hover {
+    border-bottom: 5px solid #c1c0bd; }
+  nav ul.inline li a {
+    font-size: 1.3rem; }
+  nav ul.inline li:before {
+    content: ""; }
+  @media only screen and (max-width: 992px) {
+    nav ul {
+      text-align: center; } }
+  nav .nav-brand h1, nav .nav-brand h2, nav .nav-brand h3,
+  nav .nav-brand h4, nav .nav-brand h5, nav .nav-brand h6 {
+    margin: 0;
+    margin-bottom: .2rem; }
+  nav .collapsible input[id^=collapsible]:checked ~ div.collapsible-body {
+    opacity: 1;
+    max-height: 960px;
+    padding: 0;
+    margin: 0; }
+  nav .collapsible:nth-of-type(1),
+  nav .collapsible .collapsible-body {
+    border: none; }
+    @media only screen and (min-width: 768px) {
+      nav .collapsible:nth-of-type(1),
+      nav .collapsible .collapsible-body {
+        display: contents !important; } }
+  nav div.collapsible-body {
+    padding: none !important; }
+  nav .collapsible label {
+    padding: 0;
+    border-bottom: none; }
+  nav .btn-mobile {
+    position: absolute;
+    top: 0.2rem;
+    right: 0;
+    margin-right: .5rem;
+    padding: 0.25rem;
+    margin-top: .01rem;
+    display: none;
+    background-color: white;
+    font-size: 0.5rem; }
+    @media only screen and (max-width: 768px) {
+      nav .btn-mobile {
+        display: block !important; } }
+
+/*
+ * Navbar End
+ */
+
+/*# sourceMappingURL=main.css.map */

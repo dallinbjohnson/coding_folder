@@ -1,0 +1,76 @@
+/**
+  Global PaperCSS Config
+*/
+@import url("https://fonts.googleapis.com/css?family=Neucha|Patrick+Hand+SC");
+/**
+  This Loop will generate the various .text- and .background- classes
+  based on the $colors map above.
+*/
+.text-primary {
+  color: #41403E; }
+
+.background-primary {
+  background-color: #c1c0bd; }
+
+.text-secondary {
+  color: #0071DE; }
+
+.background-secondary {
+  background-color: #deefff; }
+
+.text-success {
+  color: #86a361; }
+
+.background-success {
+  background-color: #d0dbc2; }
+
+.text-warning {
+  color: #ddcd45; }
+
+.background-warning {
+  background-color: #f5f0c6; }
+
+.text-danger {
+  color: #a7342d; }
+
+.background-danger {
+  background-color: #f0cbc9; }
+
+.text-muted {
+  color: #868e96; }
+
+.background-muted {
+  background-color: #e6e7e9; }
+
+/**
+  Assign a border style to a component selector.
+  @param    integer
+  @default  1
+*/
+/**
+  Mixin for setting responsive breakpoints
+  @param string | integer
+  @default null
+*/
+/**
+  Useful helper mixins
+*/
+/*
+  Add transform: translate() with browser prefixes.
+  Same syntax for translate() and translate3d()
+  To get 3D add a $z value and set 'true'
+  @param string | boolean
+  @default 0 | false
+*/
+/*
+  Add global transition styles to selector
+  @param string
+  @default all | 235ms | ease-in-out | 0
+*/
+/**
+  Set the shadow type for a component
+  @param    string
+  @default  regular
+*/
+
+/*# sourceMappingURL=config.css.map */
