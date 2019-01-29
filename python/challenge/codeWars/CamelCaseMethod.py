@@ -15,27 +15,27 @@ def camel_case(string):
 pprint.pprint("test case")
 pprint.pprint("TestCase")
 pprint.pprint(camel_case("test case") == "TestCase")
-print()
+print("")
 
 pprint.pprint("camel case method")
 pprint.pprint("CamelCaseMethod")
 pprint.pprint(camel_case("camel case method") == "CamelCaseMethod")
-print()
+print("")
 
 pprint.pprint("say hello ")
 pprint.pprint("SayHello")
 pprint.pprint(camel_case("say hello ") == "SayHello")
-print()
+print("")
 
 pprint.pprint(" camel case word")
 pprint.pprint("CamelCaseWord")
 pprint.pprint(camel_case(" camel case word") == "CamelCaseWord")
-print()
+print("")
 
 pprint.pprint("")
 pprint.pprint("")
 pprint.pprint(camel_case("") == "")
-print()
+print("")
 
 #
 # Other options

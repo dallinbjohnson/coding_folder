@@ -1,0 +1,19 @@
+h1 {
+	color: red;
+	background: black;
+}
+
+.green {
+	color: green;
+}
+
+h1 {
+	color: blue;
+	text-align: center;
+	padding: 20px 30px;
+	margin: 50px;
+}
+
+body {
+	margin: 0 100px;
+}

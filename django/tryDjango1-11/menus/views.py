@@ -5,6 +5,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Item
 from .forms import ItemForm
 
+
 # Create your views here.
 class ItemListView(LoginRequiredMixin, ListView):
   template_name = 'menus/index.html'
