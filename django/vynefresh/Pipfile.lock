@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "9c3a24664fd0192c2e1422a114da99d795071935a196ce133aa229e24a7ac13f"
+            "sha256": "ea9788b69deb1079592c598c50b58adc255b6c155d10df6624f3baa257cdbdca"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -91,6 +91,7 @@
                 "sha256:8737b465ebf5fad772b4c52272189c352f5904f468d298584a3469187e3207ad",
                 "sha256:8f4e36ada0ec16b98de0b6e53477772fcac3ece89a1da8473ee6aa4e658775a7"
             ],
+            "index": "pypi",
             "version": "==1.3"
         },
         "django-role-permissions": {
@@ -110,11 +111,11 @@
         },
         "djangorestframework": {
             "hashes": [
-                "sha256:6aa6aafdfb7f6152a401873ecae93aff9eb54d7a74266065347cf4de68278ae4",
-                "sha256:bb9d55997a71fb1c844cd84c15cbe2e87d2ec8493a685f96aa3db403760626b7"
+                "sha256:5cc724dc4b076463497837269107e1995b1fbc917468d1b92d188fd1af9ea789",
+                "sha256:a5967b68a04e0d97d10f4df228e30f5a2d82ba63b9d03e1759f84993b7bf1b53"
             ],
             "index": "pypi",
-            "version": "==3.6.3"
+            "version": "==3.11.2"
         },
         "idna": {
             "hashes": [
@@ -170,7 +171,6 @@
                 "sha256:f2d71951f473744ac617b645b62d0c4df5372ef4618c425646bfe5e2e8878e61"
             ],
             "index": "pypi",
-            "markers": "python_version >= '2.7' and python_version != '3.3.*' and python_version != '3.0.*' and python_version != '3.1.*' and python_version != '3.2.*'",
             "version": "==4.3.0"
         },
         "psycopg2": {
